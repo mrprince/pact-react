@@ -22,7 +22,7 @@ class PersonService {
             url: `/api/person/${id}`,
             baseURL: `${this.baseUrl}:${this.port}`,
             headers: {
-                'Accept': 'application/json'
+                'Accept': 'application/json; charset=UTF-8'
             }
         }).then(response => response.data as Person) as Promise<Person>;
     };

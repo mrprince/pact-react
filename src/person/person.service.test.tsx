@@ -35,13 +35,13 @@ describe('PersonService API', () => {
           method: "GET",
           path: "/api/person/0",
           headers: {
-            Accept: "application/json",
+            Accept: "application/json; charset=UTF-8",
           },
         })
         .willRespondWith({
           status: 200,
           headers: {
-            "Content-Type": "application/json",
+            "Content-Type": "application/json; charset=UTF-8",
           },
           body: new Person(0, 'Michael Johansen', 50),
         });
